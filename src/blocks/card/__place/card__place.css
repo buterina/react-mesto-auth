@@ -1,0 +1,7 @@
+.card__place {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 20px 0 21px;
+  padding: 0;
+}

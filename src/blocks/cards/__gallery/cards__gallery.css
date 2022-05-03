@@ -1,0 +1,16 @@
+.cards__gallery {
+  margin: 0 auto;
+  list-style: none;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  padding: 0;
+  row-gap: 20px;
+  column-gap: 17px;
+}
+
+@media screen and (max-width: 900px) {
+  .cards__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(282px, 300px));
+  }
+}

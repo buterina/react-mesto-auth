@@ -1,0 +1,17 @@
+.card__like-button_filled {
+  background-image: url(../../../images/button-heart-full.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-width: 22px;
+  height: 19px;
+  padding: 0;
+  box-sizing: border-box;
+  transition: opacity 0.3s linear;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card__like-button_filled:hover {
+  cursor: pointer;
+}

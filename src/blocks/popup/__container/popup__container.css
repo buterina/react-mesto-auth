@@ -1,0 +1,17 @@
+.popup__container {
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.popup_type_photo .popup__container {
+  background-color: rgba(0, 0, 0, 0);
+}
