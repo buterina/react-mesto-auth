@@ -82,7 +82,6 @@ function App() {
               email: data.email
             });
             setLoggedIn(true);
-
           }
         })
     }
