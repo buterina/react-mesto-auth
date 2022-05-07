@@ -1,0 +1,10 @@
+.register__signup-link {
+  text-decoration: none;
+  transition: opacity .3s linear;
+}
+
+.register__signup-link:hover {
+  opacity: .6s;
+}
+
+

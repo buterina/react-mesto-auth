@@ -7,7 +7,7 @@ function PopupWithConfirmation({ name, title, buttonText, isOpen, onClose, onSub
 
     return (
         <article
-            className={`popup popup_type_${name} ${isOpen && 'popup_opened'}`}>  
+            className={`popup popup_type_${name} ${isOpen && 'popup_opened'}`}>
             <div
                 className="popup__container">
                 <button
@@ -17,14 +17,14 @@ function PopupWithConfirmation({ name, title, buttonText, isOpen, onClose, onSub
                     aria-label="Закрыть">
                 </button>
                 <h2
-                    className="popup__title">{title}</h2>
+                    className="form__title form__title_type_confirmation">{title}</h2>
                 <form
-                    className="popup__form popup__form_type_delete-confirm"
+                    className="form form_type_delete-confirm"
                     name={name}
                     onSubmit={handleSubmit}
                     noValidate>
                     <button
-                        className="popup__button"
+                        className="form__button"
                         type="submit">{buttonText}</button>
                 </form>
             </div>
