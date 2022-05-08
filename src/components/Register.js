@@ -3,35 +3,31 @@ import { Link } from "react-router-dom";
 import Login from "./Login";
 
 const Register = ({ onRegister }) => {
-  const [password, setPassword] = useState('');
-  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
   // const [message, setMessage] = useState('');
 
   const handleEmailChange = (e) => {
-    setEmail(e.target.value)
-  }
+    setEmail(e.target.value);
+  };
 
   const handlePasswordChange = (e) => {
-    setPassword(e.target.value)
-  }
-
+    setPassword(e.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onRegister(password, email)
-  }
+    onRegister(password, email);
+  };
 
   return (
     <div className="register">
-
       <form onSubmit={handleSubmit} className="form">
         <h1 className="form__title form__title_theme_dark">Регистрация</h1>
         {/* <p className="form__error">
           {message}
         </p> */}
-        <label
-          className="form__field"
-        >
+        <label className="form__field">
           <input
             className="form__input form__input_theme_dark"
             type="text"
@@ -40,12 +36,11 @@ const Register = ({ onRegister }) => {
             autoComplete="off"
             value={email || ""}
             onChange={handleEmailChange}
-            required />
+            required
+          />
         </label>
 
-        <label
-          className="form__field"
-        >
+        <label className="form__field">
           <input
             className="form__input form__input_theme_dark"
             type="password"
@@ -54,24 +49,24 @@ const Register = ({ onRegister }) => {
             autoComplete="off"
             value={password || ""}
             onChange={handlePasswordChange}
-            required />
+            required
+          />
         </label>
 
-        <button
-          type="submit"
-          className="form__button form__button_theme_dark">
+        <button type="submit" className="form__button form__button_theme_dark">
           Зарегистрироваться
         </button>
 
         <div className="register__signup-prompt">
-            <Link to="/login" className="register__signup-link"><p className="register__signup-prompt-text">Уже зарегистрированы? Войти</p></Link>
+          <Link to="/login" className="register__signup-link">
+            <p className="register__signup-prompt-text">
+              Уже зарегистрированы? Войти
+            </p>
+          </Link>
         </div>
-
-
       </form>
     </div>
-  )
-
-}
+  );
+};
 
 export default Register;

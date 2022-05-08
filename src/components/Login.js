@@ -1,25 +1,22 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Login = ({ onLogin }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   // const [message, setMessage] = useState('');
 
-
   const handleEmailChange = (e) => {
-    setEmail(e.target.value)
-  }
+    setEmail(e.target.value);
+  };
 
   const handlePasswordChange = (e) => {
-    setPassword(e.target.value)
-  }
+    setPassword(e.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     onLogin(password, email);
-  }
-
+  };
 
   return (
     <div className="login">
@@ -28,9 +25,7 @@ const Login = ({ onLogin }) => {
         {/* <p className="form__error">
           {message}
         </p> */}
-        <label
-          className="form__field"
-        >
+        <label className="form__field">
           <input
             className="form__input form__input_theme_dark"
             type="text"
@@ -39,12 +34,11 @@ const Login = ({ onLogin }) => {
             autoComplete="off"
             value={email || ""}
             onChange={handleEmailChange}
-            required />
+            required
+          />
         </label>
 
-        <label
-          className="form__field"
-        >
+        <label className="form__field">
           <input
             className="form__input form__input_theme_dark"
             type="password"
@@ -53,19 +47,16 @@ const Login = ({ onLogin }) => {
             autoComplete="off"
             value={password || ""}
             onChange={handlePasswordChange}
-            required />
+            required
+          />
         </label>
 
-        <button
-          type="submit"
-          className="form__button form__button_theme_dark">
+        <button type="submit" className="form__button form__button_theme_dark">
           Войти
         </button>
-
       </form>
     </div>
-  )
-
-}
+  );
+};
 
 export default Login;
