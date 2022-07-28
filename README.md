@@ -1,7 +1,47 @@
-# Здесь будет ваш проект на Реакте с авторизацией и регистрацией
 
-Используйте ваши предыдущие наработки по проекту Mesto. Это может быть работа 11-го спринта или его улучшенная версия после 2-х последних спринтов. 
+# Places: a project for Practicum web development course (React.js version + authentification)
 
-Все запросы на авторизацию, регистрацию и проверку токена должны работать через сервис `https://auth.nomoreparties.co`. Остальные запросы, не относящиеся к этой проектной работе могут быть к бэкенду из предыдущих спринтов.
+## Description:
 
-Успехов!
+"Places" is an interactive website featuring user-generated posts. Users can add, like, and delete posts. This version has been rebuilt using React.js & features additional registration and jwt authentification functionality.
+
+## Features:
+
+-registration and jwt authentification;
+
+-users can add and delete posts;
+
+-users can edit their profiles;
+
+-users can like posts;
+
+-all data (profile, avatar, likes, etc.) is stored on the server;
+
+
+## Tech:
+
+-HTML5;
+
+-CSS (flexbox, grid, animations, adaptive layout);
+
+-Javascript (async, OOP, DOM API, Fetch API);
+
+-React.js
+
+-BEM (Block, Element, Modifier) methodology;
+
+-Webpack
+
+## Demo:
+
+https://buterina.github.io/react-mesto-auth
+
+## Clone:
+
+```
+git clone https://github.com/buterina/react-mesto-auth.git
+
+npm install
+
+npm run
+```

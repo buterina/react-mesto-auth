@@ -38,7 +38,7 @@ function AddPlacePopup({
       name="add-card"
       isOpen={isOpen}
       onClose={onClose}
-      buttonText="Сохранить"
+      buttonText="Save"
       title="title"
       onSubmit={handleSubmit}
     >
@@ -52,7 +52,7 @@ function AddPlacePopup({
             type="text"
             name="place"
             id="place-input"
-            placeholder="Название"
+            placeholder="Name"
             autoComplete="off"
             minLength="2"
             maxLength="30"
@@ -69,7 +69,7 @@ function AddPlacePopup({
             type="url"
             name="link"
             id="link-input"
-            placeholder="Ссылка на картинку"
+            placeholder="Image link"
             autoComplete="off"
             required
           />

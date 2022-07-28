@@ -40,7 +40,7 @@ function EditProfilePopup({
       name="edit-profile"
       isOpen={isOpen}
       onClose={onClose}
-      buttonText="Сохранить"
+      buttonText="Save"
       title={title}
       onSubmit={handleSubmit}
     >
@@ -54,7 +54,7 @@ function EditProfilePopup({
             id="name-input"
             type="text"
             name="name"
-            placeholder="Ваше имя"
+            placeholder="Your name"
             minLength="2"
             maxLength="40"
             autoComplete="off"
@@ -71,7 +71,7 @@ function EditProfilePopup({
             id="bio-input"
             type="text"
             name="about"
-            placeholder="Ваш род занятий"
+            placeholder="Your occupation"
             minLength="2"
             maxLength="200"
             autoComplete="off"

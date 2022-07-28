@@ -1,5 +1,4 @@
 import React from "react";
-import { api } from "../utils/Api";
 import Card from "./Card";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
 
@@ -22,12 +21,12 @@ function Main({
             <img
               className="profile__avatar"
               src={currentUser.avatar}
-              alt="Фотография пользователя"
+              alt="Avatar"
             />
             <button
               className="profile__avatar-button"
               type="button"
-              aria-label="Редактировать аватар"
+              aria-label="Edit avatar"
               onClick={onEditAvatar}
             ></button>
           </div>
@@ -37,7 +36,7 @@ function Main({
               <button
                 className="profile__edit-button"
                 type="button"
-                aria-label="Редактировать профиль"
+                aria-label="Edit profile"
                 onClick={onEditProfile}
               ></button>
             </div>
@@ -47,7 +46,7 @@ function Main({
         <button
           className="profile__add-button"
           type="button"
-          aria-label="Добавить карточку"
+          aria-label="Add avatar"
           onClick={onAddPlace}
         ></button>
       </section>

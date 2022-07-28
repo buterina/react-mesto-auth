@@ -11,14 +11,14 @@ const InfoToolTip = ({ onClose, isOpen, isSuccess }) => {
         src={isSuccess ? successIcon : failIcon}
         alt={
           isSuccess
-            ? "Вы успешно зарегистрировались!"
-            : "Что-то пошло не так! Попробуйте еще раз"
+            ? "Your registration is successful!"
+            : "Something has gone wrong. Try again!"
         }
       />
       <h2 className="form__title form__title_type_infotooltip">
         {isSuccess
-          ? "Вы успешно зарегистрировались!"
-          : "Что-то пошло не так! Попробуйте еще раз"}
+          ? "Your registration is successful!"
+          : "Something has gone wrong. Try again!"}
       </h2>
     </PopupWithForm>
   );

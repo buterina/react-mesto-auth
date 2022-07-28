@@ -23,7 +23,7 @@ const Register = ({ onRegister }) => {
   return (
     <div className="register">
       <form onSubmit={handleSubmit} className="form">
-        <h1 className="form__title form__title_theme_dark">Регистрация</h1>
+        <h1 className="form__title form__title_theme_dark">Register</h1>
         {/* <p className="form__error">
           {message}
         </p> */}
@@ -45,7 +45,7 @@ const Register = ({ onRegister }) => {
             className="form__input form__input_theme_dark"
             type="password"
             id="register-password"
-            placeholder="Пароль"
+            placeholder="Password"
             autoComplete="off"
             value={password || ""}
             onChange={handlePasswordChange}
@@ -54,13 +54,13 @@ const Register = ({ onRegister }) => {
         </label>
 
         <button type="submit" className="form__button form__button_theme_dark">
-          Зарегистрироваться
+          Register
         </button>
 
         <div className="register__signup-prompt">
           <Link to="/login" className="register__signup-link">
             <p className="register__signup-prompt-text">
-              Уже зарегистрированы? Войти
+              Already registered? Log in
             </p>
           </Link>
         </div>

@@ -21,7 +21,7 @@ const Login = ({ onLogin }) => {
   return (
     <div className="login">
       <form onSubmit={handleSubmit} className="form">
-        <h1 className="form__title form__title_theme_dark">Вход</h1>
+        <h1 className="form__title form__title_theme_dark">Login</h1>
         {/* <p className="form__error">
           {message}
         </p> */}
@@ -43,7 +43,7 @@ const Login = ({ onLogin }) => {
             className="form__input form__input_theme_dark"
             type="password"
             id="login-password"
-            placeholder="Пароль"
+            placeholder="Password"
             autoComplete="off"
             value={password || ""}
             onChange={handlePasswordChange}
@@ -52,7 +52,7 @@ const Login = ({ onLogin }) => {
         </label>
 
         <button type="submit" className="form__button form__button_theme_dark">
-          Войти
+          Log in
         </button>
       </form>
     </div>

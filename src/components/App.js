@@ -229,12 +229,12 @@ function App() {
             </Route>
             <Route path="/sign-up">
               <Link to="/sign-in" className="header__nav-link">
-                Войти
+                Sign in
               </Link>
             </Route>
             <Route path="/sign-in">
               <Link to="/sign-up" className="header__nav-link">
-                Регистрация
+                Register
               </Link>
             </Route>
           </Header>
@@ -254,24 +254,24 @@ function App() {
                 isOpen={isEditProfilePopupOpen}
                 onClose={closeAllPopups}
                 onUpdateUser={handleUpdateUser}
-                buttonText="Сохранить"
-                title="Редактировать профиль"
+                buttonText="Save"
+                title="Edit profile"
               />
 
               <EditAvatarPopup
                 isOpen={isEditAvatarPopupOpen}
                 onClose={closeAllPopups}
                 onUpdateAvatar={handleUpdateAvatar}
-                buttonText="Сохранить"
-                title="Обновить аватар"
+                buttonText="Save"
+                title="Update avatar"
               />
 
               <AddPlacePopup
                 isOpen={isAddPlacePopupOpen}
                 onClose={closeAllPopups}
                 onAddPlace={handleUpdatePlace}
-                buttonText="Добавить"
-                title="Новое место"
+                buttonText="Add"
+                title="New place"
               />
 
               <ImagePopup card={selectedCard} onClose={closeAllPopups} />
@@ -279,8 +279,8 @@ function App() {
               <PopupWithConfirmation
                 name="delete-confirm"
                 isOpen={isConfirmationPopupOpen}
-                title="Вы уверены?"
-                buttonText="Да"
+                title="Are you sure?"
+                buttonText="Yes"
                 onClose={closeAllPopups}
                 onSubmit={handleCardDelete}
               />

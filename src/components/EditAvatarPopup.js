@@ -19,7 +19,7 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar, buttonDisabled, butt
       name="edit-avatar"
       isOpen={isOpen}
       onClose={onClose}
-      buttonText="Сохранить"
+      buttonText="Save"
       title={title}
       onSubmit={handleSubmit}>
       <>
@@ -30,7 +30,7 @@ function EditAvatarPopup({ isOpen, onClose, onUpdateAvatar, buttonDisabled, butt
             className="form__input form__input_type_avatar"
             type="url" name="avatar"
             id="avatar-input"
-            placeholder="Ссылка на аватар"
+            placeholder="Avatar link"
             autoComplete="off"
             ref={avatarRef}
             required />
